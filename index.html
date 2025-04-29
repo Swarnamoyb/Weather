@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherGlass | Live Weather & Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="weatherVideo">
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="weather-box">
+            <div class="logo">
+                <img src="images/weather-logo.png" alt="WeatherGlass Logo">
+                <h1>Swarnamoy's Weather</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Enter city name" id="search-input">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="weather-info">
+                <h2 class="city">Weather in City</h2>
+                <div class="temperature">--°C</div>
+                <div class="feels-like">Feels like: --°C</div>
+                <div class="description">Weather Description</div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Humidity</span>
+                        <span class="detail-value">--%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Wind Speed</span>
+                        <span class="detail-value">-- km/h</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Pressure</span>
+                        <span class="detail-value">-- hPa</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Visibility</span>
+                        <span class="detail-value">-- km</span>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-container">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-items"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
