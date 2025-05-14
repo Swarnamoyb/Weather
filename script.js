@@ -74,7 +74,7 @@ function displayForecast(data) {
             unique.push(forecast);
         }
         return unique;
-    }, []).slice(0, 5);  // Changed from 5 to 7 days
+    }, []).slice(0, 5);  
 
     dailyForecasts.forEach(forecast => {
         const date = new Date(forecast.dt * 1000);
